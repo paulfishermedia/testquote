@@ -46,12 +46,11 @@ p {
 #wrapper {
 	padding: 10px;
 	margin: 0 auto;
-
 }
 
 #canvas {
-	width:540px; 
-	height:960px;
+	width:490px; 
+	height:910px;
 }
 
 #MMFCanvas {
@@ -60,7 +59,7 @@ p {
 }
 </style>
 
-  <title>Self-Love October</title>
+  <title>Self-Love</title>
 
 	<script>
 	   	// Detection of old browsers that do not support the canvas element
@@ -96,8 +95,9 @@ p {
 <!-- This is where we create the Canvas element that will contain the application...-->
 <body>
     <div id="wrapper">
+	    <div id="border">
 		    <div id="canvas">
-			    <canvas id="MMFCanvas" width="540" height="960">
+			    <canvas id="MMFCanvas" width="490" height="910">
 				    <p>Your browser does not support Canvas.</p>
 			    </canvas>   
 		    </div>
@@ -112,10 +112,9 @@ p {
 		    // Calls the runtime
 		    // First parameter : name of the canvas element
 		    // Second parameter : path to the cch file. Images and sounds must lay beside this file
-		    new Runtime("MMFCanvas", "resources/test.cch");
+		    new Runtime("MMFCanvas", "resources/Quote.cch");
 	    }
         // RUNTIMESTARTEND
     </script>
-
 </body>
 </html>
